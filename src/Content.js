@@ -7,7 +7,9 @@ const Content = ({ data }) => {
         return (
           category.meals.length > 0 && (
             <div key={index}>
-              <h3>{category.name}</h3>
+              <div className="spacer">
+                <h3>{category.name}</h3>
+              </div>
               <Menu data={category.meals} />
             </div>
           )
